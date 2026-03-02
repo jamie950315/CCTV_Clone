@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  cctv-clone:
+    image: nginx:alpine
+    ports:
+      - "8964:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+    restart: always
